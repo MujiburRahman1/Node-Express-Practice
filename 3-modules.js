@@ -1,12 +1,14 @@
 //Modules -info about current module (file)
+//CommoneJS, every file is module (by default)
 
-const john = 'john'
-const peter = 'peter'
-const mujib = 'mujib'
+const names = require('./4-names')
+const sayHi = require('./5-utlis')
+const data = require('./6-alternative-flavor')
+require('./7-mind-grenade')
+// console.log(data)
+// console.log(names)
 
-const sayHi = (name) => {
-    console.log(`Hello there ${name}`)
-}
-
-sayHi('susan')
-sayHi(mujib)
+// sayHi('susan')
+// sayHi(names.mujib)
+// sayHi(names.john)
+// sayHi(names.peter)
